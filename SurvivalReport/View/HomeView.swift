@@ -15,6 +15,7 @@ struct HomeView: View {
                 VStack(spacing: 5) {
                     HomeUserInfoView()
                     HomeDeviceInfoView()
+                    HomeMyDeviceView()
                 }
                 .frame(maxWidth: .infinity)
             }
@@ -74,6 +75,33 @@ struct HomeDeviceInfoView: View {
                     .foregroundStyle(Color(hex:"#333333"))
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+        }
+        .padding(15)
+        .background(.white)
+    }
+}
+
+struct HomeMyDeviceView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Text("현재 보유 중인 기기")
+                .font(.system(size: 17))
+                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
+            
+            Spacer().frame(height:10)
+            
+            HStack {
+                Text("iPhone 13 Pro Max"); Spacer(); Text("ONIT-M46")
+            }
+            .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+            ForEach(0..<5) { _ in
+                Color(hex: "#cccccc").frame(height: 1)
+                HStack {
+                    Text("iPhone 13 Pro Max"); Spacer(); Text("ONIT-M46")
+                }
+                .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+            }
         }
         .padding(15)
         .background(.white)
