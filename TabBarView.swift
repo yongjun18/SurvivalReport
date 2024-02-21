@@ -14,31 +14,28 @@ struct TabBarView: View {
         Color.gray.frame(height: 1)
         Spacer().frame(height:5)
         HStack(spacing: 10) {
-            TabBarButton(iconImage: "house", title: "홈")
-                .onTapGesture { tabBarViewModel.setSelectedTab(tab: .home) }
-            TabBarButton(iconImage: "doc.text", title: "기록")
-                .onTapGesture { tabBarViewModel.setSelectedTab(tab: .history) }
-            TabBarButton(iconImage: "hand.raised", title: "생존신고")
-                .onTapGesture { tabBarViewModel.setSelectedTab(tab: .report) }
-            TabBarButton(iconImage: "gearshape", title: "설정")
-                .onTapGesture { tabBarViewModel.setSelectedTab(tab: .setting) }
+            TabBarButton(tabType: .home, tabBarViewModel: tabBarViewModel)
+            TabBarButton(tabType: .history, tabBarViewModel: tabBarViewModel)
+            TabBarButton(tabType: .report, tabBarViewModel: tabBarViewModel)
+            TabBarButton(tabType: .setting, tabBarViewModel: tabBarViewModel)
         }
     }
 }
 
 struct TabBarButton: View {
-    let iconImage: String
-    let title: String
+    let tabType: TabBarViewModel.Tab
+    @ObservedObject var tabBarViewModel: TabBarViewModel
     
     var body: some View {
         VStack(spacing: 0) {
-            Image(systemName: iconImage)
+            Image(systemName: tabType.imageString + (tabType == tabBarViewModel.selectedTab ? ".fill" : ""))
                 .font(.system(size: 23))
             Spacer().frame(height: 5)
-            Text(title)
+            Text(tabType.name)
                 .font(.system(size: 11))
         }
         .frame(maxWidth: .infinity)
+        .onTapGesture { tabBarViewModel.setSelectedTab(tab: tabType) }
     }
 }
 
