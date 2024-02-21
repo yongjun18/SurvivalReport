@@ -16,6 +16,7 @@ struct HomeView: View {
                     HomeUserInfoView()
                     HomeDeviceInfoView()
                     HomeMyDeviceView()
+                    HomeAllDeviceView()
                 }
                 .frame(maxWidth: .infinity)
             }
@@ -118,6 +119,38 @@ struct HomeMyDeviceView: View {
         .background(.white)
     }
 }
+
+struct HomeAllDeviceView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Text("모든 기기")
+                .font(.system(size: 17))
+                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
+            
+            Spacer().frame(height:10)
+            
+            HStack {
+                Text("갤럭시 S7").lineLimit(1)
+                Spacer()
+                Text("ONIT-M018").lineLimit(1)
+            }
+            .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+            ForEach(0..<5) { _ in
+                Color(hex: "#cccccc").frame(height: 1)
+                HStack {
+                    Text("갤럭시 S7").lineLimit(1)
+                    Spacer()
+                    Text("ONIT-M018").lineLimit(1)
+                }
+                .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+            }
+        }
+        .padding(15)
+        .background(.white)
+    }
+}
+
 
 struct TitleBar: View {
     let title: String
