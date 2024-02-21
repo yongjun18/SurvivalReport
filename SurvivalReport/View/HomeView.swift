@@ -13,6 +13,7 @@ struct HomeView: View {
             TitleBar(title: "홈")
             ScrollView {
                 VStack(spacing: 5) {
+                    HomeUserInfoView()
                     HomeDeviceInfoView()
                 }
                 .frame(maxWidth: .infinity)
@@ -22,7 +23,7 @@ struct HomeView: View {
     }
 }
 
-struct HomeDeviceInfoView: View {
+struct HomeUserInfoView: View {
     var body: some View {
         HStack(spacing: 0) {
             Image(systemName: "person.circle")
@@ -39,6 +40,36 @@ struct HomeDeviceInfoView: View {
                     .font(.system(size: 16))
                     .foregroundStyle(Color(hex:"#333333"))
                 Text("제일제당 mSFA 앱 운영")
+                    .font(.system(size: 16))
+                    .foregroundStyle(Color(hex:"#333333"))
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+        }
+        .padding(15)
+        .background(.white)
+    }
+}
+
+struct HomeDeviceInfoView: View {
+    var body: some View {
+        HStack(spacing: 0) {
+            Image(systemName: "iphone.gen1.circle")
+                .font(.system(size: 40))
+                .foregroundStyle(Color(hex:"#555555"))
+            
+            Spacer().frame(width: 15)
+            
+            VStack(alignment: .leading, spacing: 0) {
+                Text("iPhone 13 Pro Max")
+                    .font(.system(size: 18))
+                Spacer().frame(height:3)
+                Text("ONIT-M46")
+                    .font(.system(size: 16))
+                    .foregroundStyle(Color(hex:"#333333"))
+                Text("iOS 16.6.1")
+                    .font(.system(size: 16))
+                    .foregroundStyle(Color(hex:"#333333"))
+                Text("최근 생존신고 날짜 : 2024.02.21")
                     .font(.system(size: 16))
                     .foregroundStyle(Color(hex:"#333333"))
             }
