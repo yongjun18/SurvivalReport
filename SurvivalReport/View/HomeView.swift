@@ -36,13 +36,16 @@ struct HomeUserInfoView: View {
             VStack(alignment: .leading, spacing: 0) {
                 Text("정용준님 사용 중 (835282)")
                     .font(.system(size: 18))
+                    .lineLimit(1)
                 Spacer().frame(height:3)
                 Text("AM 2팀")
                     .font(.system(size: 16))
                     .foregroundStyle(Color(hex:"#333333"))
+                    .lineLimit(1)
                 Text("제일제당 mSFA 앱 운영")
                     .font(.system(size: 16))
                     .foregroundStyle(Color(hex:"#333333"))
+                    .lineLimit(1)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         }
@@ -63,16 +66,20 @@ struct HomeDeviceInfoView: View {
             VStack(alignment: .leading, spacing: 0) {
                 Text("iPhone 13 Pro Max")
                     .font(.system(size: 18))
+                    .lineLimit(1)
                 Spacer().frame(height:3)
                 Text("ONIT-M46")
                     .font(.system(size: 16))
                     .foregroundStyle(Color(hex:"#333333"))
+                    .lineLimit(1)
                 Text("iOS 16.6.1")
                     .font(.system(size: 16))
                     .foregroundStyle(Color(hex:"#333333"))
+                    .lineLimit(1)
                 Text("최근 생존신고 날짜 : 2024.02.21")
                     .font(.system(size: 16))
                     .foregroundStyle(Color(hex:"#333333"))
+                    .lineLimit(1)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         }
@@ -92,13 +99,17 @@ struct HomeMyDeviceView: View {
             Spacer().frame(height:10)
             
             HStack {
-                Text("iPhone 13 Pro Max"); Spacer(); Text("ONIT-M46")
+                Text("iPhone 13 Pro Max").lineLimit(1)
+                Spacer()
+                Text("ONIT-M46").lineLimit(1)
             }
             .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
             ForEach(0..<5) { _ in
                 Color(hex: "#cccccc").frame(height: 1)
                 HStack {
-                    Text("iPhone 13 Pro Max"); Spacer(); Text("ONIT-M46")
+                    Text("iPhone 13 Pro Max").lineLimit(1)
+                    Spacer()
+                    Text("ONIT-M46").lineLimit(1)
                 }
                 .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
             }
