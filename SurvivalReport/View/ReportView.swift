@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ReportView: View {
     var body: some View {
-        ScrollView {
-            Text("Report View")
+        VStack(spacing: 0) {
+            TitleBar(title: "생존신고")
+            ScrollView {
+                Text("Report View")
+            }
         }
     }
 }

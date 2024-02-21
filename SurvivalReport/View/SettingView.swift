@@ -9,8 +9,11 @@ import SwiftUI
 
 struct SettingView: View {
     var body: some View {
-        ScrollView {
-            Text("Setting View")
+        VStack(spacing: 0) {
+            TitleBar(title: "설정")
+            ScrollView {
+                Text("Setting View")
+            }
         }
     }
 }

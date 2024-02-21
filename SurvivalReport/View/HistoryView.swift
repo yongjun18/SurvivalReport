@@ -9,8 +9,11 @@ import SwiftUI
 
 struct HistoryView: View {
     var body: some View {
-        ScrollView {
-            Text("History View")
+        VStack(spacing: 0) {
+            TitleBar(title: "기록")
+            ScrollView {
+                Text("History View")
+            }
         }
     }
 }
