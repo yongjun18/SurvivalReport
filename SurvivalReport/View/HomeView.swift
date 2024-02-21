@@ -133,7 +133,7 @@ struct HomeAllDeviceView: View {
             HStack {
                 Text("갤럭시 S7").lineLimit(1)
                 Spacer()
-                Text("ONIT-M018").lineLimit(1)
+                Text("정열창님 사용 중").lineLimit(1)
             }
             .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
             ForEach(0..<5) { _ in
@@ -141,7 +141,7 @@ struct HomeAllDeviceView: View {
                 HStack {
                     Text("갤럭시 S7").lineLimit(1)
                     Spacer()
-                    Text("ONIT-M018").lineLimit(1)
+                    Text("정열창님 사용 중").lineLimit(1)
                 }
                 .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
             }
