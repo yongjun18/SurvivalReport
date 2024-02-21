@@ -37,5 +37,8 @@ struct TabBarButton: View {
 }
 
 #Preview {
-    TabBarView()
+    VStack {
+        Spacer()
+        TabBarView()
+    }
 }
