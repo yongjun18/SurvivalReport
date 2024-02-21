@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct TabBarView: View {
+    @ObservedObject var tabBarViewModel: TabBarViewModel
+    
     var body: some View {
         Color.gray.frame(height: 1)
         Spacer().frame(height:5)
         HStack(spacing: 10) {
             TabBarButton(iconImage: "house", title: "홈")
+                .onTapGesture { tabBarViewModel.setSelectedTab(tab: .home) }
             TabBarButton(iconImage: "doc.text", title: "기록")
+                .onTapGesture { tabBarViewModel.setSelectedTab(tab: .history) }
             TabBarButton(iconImage: "hand.raised", title: "생존신고")
+                .onTapGesture { tabBarViewModel.setSelectedTab(tab: .report) }
             TabBarButton(iconImage: "gearshape", title: "설정")
+                .onTapGesture { tabBarViewModel.setSelectedTab(tab: .setting) }
         }
     }
 }
@@ -39,6 +45,6 @@ struct TabBarButton: View {
 #Preview {
     VStack {
         Spacer()
-        TabBarView()
+        TabBarView(tabBarViewModel: TabBarViewModel())
     }
 }
