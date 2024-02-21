@@ -12,9 +12,40 @@ struct HomeView: View {
         VStack(spacing: 0) {
             TitleBar(title: "홈")
             ScrollView {
-                Text("Home View")
+                VStack(spacing: 5) {
+                    HomeDeviceInfoView()
+                }
+                .frame(maxWidth: .infinity)
             }
+            .background(Color(hex: "#cccccc"))
         }
+    }
+}
+
+struct HomeDeviceInfoView: View {
+    var body: some View {
+        HStack(spacing: 0) {
+            Image(systemName: "person.circle")
+                .font(.system(size: 40))
+                .foregroundStyle(Color(hex:"#555555"))
+            
+            Spacer().frame(width: 15)
+            
+            VStack(alignment: .leading, spacing: 0) {
+                Text("정용준님 사용 중 (835282)")
+                    .font(.system(size: 18))
+                Spacer().frame(height:3)
+                Text("AM 2팀")
+                    .font(.system(size: 16))
+                    .foregroundStyle(Color(hex:"#333333"))
+                Text("제일제당 mSFA 앱 운영")
+                    .font(.system(size: 16))
+                    .foregroundStyle(Color(hex:"#333333"))
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+        }
+        .padding(15)
+        .background(.white)
     }
 }
 
