@@ -17,6 +17,7 @@
 		D0BE6F2E2B85CEDB0083C083 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6F2D2B85CEDB0083C083 /* ReportView.swift */; };
 		D0BE6F302B85CEE70083C083 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6F2F2B85CEE70083C083 /* SettingView.swift */; };
 		D0BE6F322B85CFBD0083C083 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6F312B85CFBD0083C083 /* TabBarViewModel.swift */; };
+		D0BE6F352B85E2190083C083 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6F342B85E2190083C083 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		D0BE6F2D2B85CEDB0083C083 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		D0BE6F2F2B85CEE70083C083 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		D0BE6F312B85CFBD0083C083 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		D0BE6F342B85E2190083C083 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		D0BE6F152B85ADAC0083C083 /* SurvivalReport */ = {
 			isa = PBXGroup;
 			children = (
+				D0BE6F332B85E20C0083C083 /* Extension */,
 				D0BE6F262B85AEB60083C083 /* Model */,
 				D0BE6F252B85AEAE0083C083 /* ViewModel */,
 				D0BE6F242B85AEA80083C083 /* View */,
@@ -107,6 +110,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D0BE6F332B85E20C0083C083 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D0BE6F342B85E2190083C083 /* ColorExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 				D0BE6F322B85CFBD0083C083 /* TabBarViewModel.swift in Sources */,
 				D0BE6F192B85ADAC0083C083 /* ContentView.swift in Sources */,
 				D0BE6F2A2B85CE9D0083C083 /* HomeView.swift in Sources */,
+				D0BE6F352B85E2190083C083 /* ColorExtension.swift in Sources */,
 				D0BE6F2E2B85CEDB0083C083 /* ReportView.swift in Sources */,
 				D0BE6F302B85CEE70083C083 /* SettingView.swift in Sources */,
 				D0BE6F2C2B85CEC50083C083 /* HistoryView.swift in Sources */,
