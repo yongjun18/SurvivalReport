@@ -25,7 +25,7 @@ struct HomeView: View {
 
 struct HomeUserInfoView: View {
     var body: some View {
-        HStack(spacing: 0) {
+        HStack(alignment: .top, spacing: 0) {
             Image(systemName: "person.circle")
                 .font(.system(size: 40))
                 .foregroundStyle(Color(hex:"#555555"))
@@ -52,7 +52,7 @@ struct HomeUserInfoView: View {
 
 struct HomeDeviceInfoView: View {
     var body: some View {
-        HStack(spacing: 0) {
+        HStack(alignment: .top, spacing: 0) {
             Image(systemName: "iphone.gen1.circle")
                 .font(.system(size: 40))
                 .foregroundStyle(Color(hex:"#555555"))
