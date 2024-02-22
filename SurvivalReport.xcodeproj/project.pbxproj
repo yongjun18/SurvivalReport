@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D04E2FCB2B872617006686B7 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04E2FCA2B872617006686B7 /* TabBarModel.swift */; };
+		D04E2FCD2B872E8B006686B7 /* ReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04E2FCC2B872E8B006686B7 /* ReportViewModel.swift */; };
+		D04E2FCF2B872EED006686B7 /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04E2FCE2B872EED006686B7 /* ReportModel.swift */; };
 		D0BE6F172B85ADAC0083C083 /* SurvivalReportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6F162B85ADAC0083C083 /* SurvivalReportApp.swift */; };
 		D0BE6F192B85ADAC0083C083 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6F182B85ADAC0083C083 /* ContentView.swift */; };
 		D0BE6F1B2B85ADAD0083C083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BE6F1A2B85ADAD0083C083 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		D04E2FCA2B872617006686B7 /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
+		D04E2FCC2B872E8B006686B7 /* ReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewModel.swift; sourceTree = "<group>"; };
+		D04E2FCE2B872EED006686B7 /* ReportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportModel.swift; sourceTree = "<group>"; };
 		D0BE6F132B85ADAC0083C083 /* SurvivalReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurvivalReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BE6F162B85ADAC0083C083 /* SurvivalReportApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivalReportApp.swift; sourceTree = "<group>"; };
 		D0BE6F182B85ADAC0083C083 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				D0BE6F312B85CFBD0083C083 /* TabBarViewModel.swift */,
+				D04E2FCC2B872E8B006686B7 /* ReportViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				D04E2FCA2B872617006686B7 /* TabBarModel.swift */,
+				D04E2FCE2B872EED006686B7 /* ReportModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,7 +206,9 @@
 				D0BE6F2E2B85CEDB0083C083 /* ReportView.swift in Sources */,
 				D0BE6F302B85CEE70083C083 /* SettingView.swift in Sources */,
 				D0BE6F2C2B85CEC50083C083 /* HistoryView.swift in Sources */,
+				D04E2FCD2B872E8B006686B7 /* ReportViewModel.swift in Sources */,
 				D0BE6F282B85B0480083C083 /* TabBarView.swift in Sources */,
+				D04E2FCF2B872EED006686B7 /* ReportModel.swift in Sources */,
 				D0BE6F172B85ADAC0083C083 /* SurvivalReportApp.swift in Sources */,
 				D04E2FCB2B872617006686B7 /* TabBarModel.swift in Sources */,
 			);
