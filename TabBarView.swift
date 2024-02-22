@@ -23,7 +23,7 @@ struct TabBarView: View {
 }
 
 struct TabBarButton: View {
-    let tabType: TabBarViewModel.Tab
+    let tabType: Tab
     @ObservedObject var tabBarViewModel: TabBarViewModel
     
     var body: some View {
