@@ -40,11 +40,11 @@ struct HomeUserInfoView: View {
                     .lineLimit(1)
                 Spacer().frame(height:3)
                 Text("AM 2팀")
-                    .font(.system(size: 16))
+                    .font(.system(size: 15))
                     .foregroundStyle(Color(hex:"#333333"))
                     .lineLimit(1)
                 Text("제일제당 mSFA 앱 운영")
-                    .font(.system(size: 16))
+                    .font(.system(size: 15))
                     .foregroundStyle(Color(hex:"#333333"))
                     .lineLimit(1)
             }
@@ -70,15 +70,15 @@ struct HomeDeviceInfoView: View {
                     .lineLimit(1)
                 Spacer().frame(height:3)
                 Text("ONIT-M46")
-                    .font(.system(size: 16))
+                    .font(.system(size: 15))
                     .foregroundStyle(Color(hex:"#333333"))
                     .lineLimit(1)
                 Text("iOS 16.6.1")
-                    .font(.system(size: 16))
+                    .font(.system(size: 15))
                     .foregroundStyle(Color(hex:"#333333"))
                     .lineLimit(1)
                 Text("최근 생존신고 날짜 : 2024.02.21")
-                    .font(.system(size: 16))
+                    .font(.system(size: 15))
                     .foregroundStyle(Color(hex:"#333333"))
                     .lineLimit(1)
             }
@@ -104,6 +104,7 @@ struct HomeMyDeviceView: View {
                 Spacer()
                 Text("ONIT-M46").lineLimit(1)
             }
+            .font(.system(size: 16))
             .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
             ForEach(0..<5) { _ in
                 Color(hex: "#cccccc").frame(height: 1)
@@ -112,6 +113,7 @@ struct HomeMyDeviceView: View {
                     Spacer()
                     Text("ONIT-M46").lineLimit(1)
                 }
+                .font(.system(size: 16))
                 .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
             }
         }
@@ -135,6 +137,7 @@ struct HomeAllDeviceView: View {
                 Spacer()
                 Text("정열창님 사용 중").lineLimit(1)
             }
+            .font(.system(size: 16))
             .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
             ForEach(0..<5) { _ in
                 Color(hex: "#cccccc").frame(height: 1)
@@ -143,6 +146,7 @@ struct HomeAllDeviceView: View {
                     Spacer()
                     Text("정열창님 사용 중").lineLimit(1)
                 }
+                .font(.system(size: 16))
                 .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
             }
         }
