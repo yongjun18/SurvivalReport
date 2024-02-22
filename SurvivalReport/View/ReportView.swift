@@ -65,7 +65,9 @@ struct ReportView: View {
             }
             
             Color.gray.frame(height: 1)
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {
+                reportViewModel.submitReport()
+            }, label: {
                 Text("전송")
                     .frame(height: 40)
                     .frame(maxWidth: .infinity)
@@ -74,6 +76,12 @@ struct ReportView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 3))
             })
             .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
+            .alert("생존신고", isPresented: $reportViewModel.alertPresented, actions: {
+                Button("취소") { reportViewModel.alertPresented = false }
+                Button("확인") { reportViewModel.alertPresented = false }
+            }, message: {
+                Text("생존신고를 전송하시겠습니까?")
+            })
             
         }
     }

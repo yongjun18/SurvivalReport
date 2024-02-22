@@ -9,6 +9,9 @@ import Foundation
 
 class ReportViewModel: ObservableObject {
     @Published var reportModel = ReportModel()
+    @Published var alertPresented: Bool = false
     
-    
+    func submitReport() {
+        alertPresented = true
+    }
 }
