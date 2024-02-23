@@ -36,15 +36,15 @@ struct HomeUserInfoView: View {
             
             VStack(alignment: .leading, spacing: 0) {
                 Text("정용준님 사용 중 (835282)")
-                    .font(.system(size: 18))
+                    .font(.system(size: 17))
                     .lineLimit(1)
                 Spacer().frame(height:3)
                 Text("AM 2팀")
-                    .font(.system(size: 15))
+                    .font(.system(size: 14))
                     .foregroundStyle(Color(hex:"#333333"))
                     .lineLimit(1)
                 Text("제일제당 mSFA 앱 운영")
-                    .font(.system(size: 15))
+                    .font(.system(size: 14))
                     .foregroundStyle(Color(hex:"#333333"))
                     .lineLimit(1)
             }
@@ -66,19 +66,19 @@ struct HomeDeviceInfoView: View {
             
             VStack(alignment: .leading, spacing: 0) {
                 Text("iPhone 13 Pro Max")
-                    .font(.system(size: 18))
+                    .font(.system(size: 17))
                     .lineLimit(1)
                 Spacer().frame(height:3)
                 Text("ONIT-M46")
-                    .font(.system(size: 15))
+                    .font(.system(size: 14))
                     .foregroundStyle(Color(hex:"#333333"))
                     .lineLimit(1)
                 Text("iOS 16.6.1")
-                    .font(.system(size: 15))
+                    .font(.system(size: 14))
                     .foregroundStyle(Color(hex:"#333333"))
                     .lineLimit(1)
                 Text("최근 생존신고 날짜 : 2024.02.21")
-                    .font(.system(size: 15))
+                    .font(.system(size: 14))
                     .foregroundStyle(Color(hex:"#333333"))
                     .lineLimit(1)
             }
@@ -93,7 +93,7 @@ struct HomeMyDeviceView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text("현재 보유 중인 기기")
-                .font(.system(size: 17))
+                .font(.system(size: 16))
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
             
@@ -104,7 +104,7 @@ struct HomeMyDeviceView: View {
                 Spacer()
                 Text("ONIT-M46").lineLimit(1)
             }
-            .font(.system(size: 16))
+            .font(.system(size: 14))
             .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
             ForEach(0..<5) { _ in
                 Color(hex: "#cccccc").frame(height: 1)
@@ -113,7 +113,7 @@ struct HomeMyDeviceView: View {
                     Spacer()
                     Text("ONIT-M46").lineLimit(1)
                 }
-                .font(.system(size: 16))
+                .font(.system(size: 14))
                 .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
             }
         }
@@ -137,7 +137,7 @@ struct HomeAllDeviceView: View {
                 Spacer()
                 Text("정열창님 사용 중").lineLimit(1)
             }
-            .font(.system(size: 16))
+            .font(.system(size: 14))
             .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
             ForEach(0..<5) { _ in
                 Color(hex: "#cccccc").frame(height: 1)
@@ -146,7 +146,7 @@ struct HomeAllDeviceView: View {
                     Spacer()
                     Text("정열창님 사용 중").lineLimit(1)
                 }
-                .font(.system(size: 16))
+                .font(.system(size: 14))
                 .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
             }
         }

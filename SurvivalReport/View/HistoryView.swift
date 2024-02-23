@@ -49,15 +49,15 @@ struct HistoryRecentView: View {
             
             VStack(alignment: .leading, spacing: 0) {
                 Text("\(name) 사용 중 (\(userId))")
-                    .font(.system(size: 18))
+                    .font(.system(size: 17))
                     .lineLimit(1)
                 Spacer().frame(height:3)
                 Text("\(startDt) 사용 시작")
-                    .font(.system(size: 15))
+                    .font(.system(size: 14))
                     .foregroundStyle(Color(hex:"#333333"))
                     .lineLimit(1)
                 Text("\(lastReportDt) 마지막 생존신고")
-                    .font(.system(size: 15))
+                    .font(.system(size: 14))
                     .foregroundStyle(Color(hex:"#ee2222"))
                     .lineLimit(1)
             }
@@ -76,18 +76,18 @@ struct HistoryOldView: View {
     var body: some View {
         HStack(alignment: .top, spacing: 0) {
             Image(systemName: "person.fill")
-                .font(.system(size: 20))
+                .font(.system(size: 18))
                 .foregroundStyle(Color(hex:"#555555"))
             
             Spacer().frame(width: 15)
             
             VStack(alignment: .leading, spacing: 0) {
                 Text("\(name) 사용 (\(userId))")
-                    .font(.system(size: 18))
+                    .font(.system(size: 16))
                     .lineLimit(1)
                 Spacer().frame(height:3)
                 Text("\(startDt) 사용 시작")
-                    .font(.system(size: 15))
+                    .font(.system(size: 14))
                     .foregroundStyle(Color(hex:"#333333"))
                     .lineLimit(1)
             }
